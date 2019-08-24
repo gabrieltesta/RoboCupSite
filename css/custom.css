@@ -47,6 +47,10 @@ body {
     letter-spacing: .25rem;
 }
 
+.navbar-bg-dark {
+    background-color: #151718 !important;
+}
+
 
 /* Header */
 
