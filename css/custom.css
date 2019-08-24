@@ -65,9 +65,9 @@ header .video-container video {
     min-height: 100%;
     position: absolute;
     z-index: 0;
-    bottom: 0%;
+    bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%);
 }
 
 header .header-backdrop {
@@ -75,7 +75,7 @@ header .header-backdrop {
     height: 60vh;
     position: absolute;
     background-color: #000;
-    opacity: .6;
+    opacity: .7;
     top: 0;
     left: 0;
 }
