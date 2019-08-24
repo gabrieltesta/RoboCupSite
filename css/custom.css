@@ -1,24 +1,66 @@
-body
-{
+/* Universal */
+
+body {
     background-color: #212121;
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 }
 
-header
-{
+
+/* Helpers */
+
+.text-pink {
+    color: #ED145B;
+}
+
+.btn {
+    border: 1px solid #ed145b;
+    color: #ed145b;
+    display: inline-block;
+    font: 14px Gotham HTF Medium;
+    letter-spacing: .5px;
+    margin: 80px auto 0;
+    padding: 15px 43px;
+    text-transform: uppercase;
+    -webkit-transition: background .4s ease, color .4s ease;
+    transition: background .4s ease, color .4s ease;
+    border-radius: 0;
+}
+
+.btn:hover {
+    background: #ed145b;
+    color: #000;
+}
+
+
+/* Navbar */
+
+.navbar {
+    color: #ED145B !important;
+    background: transparent !important;
+}
+
+.navbar-brand {
+    font-family: "Gotham HTF Thin";
+    color: #ED145B !important;
+    font-size: 2rem;
+    letter-spacing: .25rem;
+}
+
+
+/* Header */
+
+header {
     position: relative;
 }
 
-header .video-container
-{
+header .video-container {
     position: relative;
     height: 60vh;
     overflow: hidden;
 }
 
-header .video-container video
-{
+header .video-container video {
     min-width: 100%;
     min-height: 100%;
     position: absolute;
@@ -26,8 +68,7 @@ header .video-container video
     bottom: 0%;
 }
 
-header .header-backdrop
-{
+header .header-backdrop {
     width: 100%;
     height: 60vh;
     position: absolute;
@@ -37,8 +78,7 @@ header .header-backdrop
     left: 0;
 }
 
-header .header-container
-{
+header .header-container {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -46,8 +86,7 @@ header .header-container
     left: 0;
 }
 
-header .header-container .logo-robocup
-{
+header .header-container .logo-robocup {
     position: absolute;
     left: 50%;
     top: 40%;
@@ -55,8 +94,7 @@ header .header-container .logo-robocup
     z-index: 2;
 }
 
-header .header-container h1
-{
+header .header-container h1 {
     position: absolute;
     left: 50%;
     top: 40%;
@@ -68,14 +106,12 @@ header .header-container h1
     font-size: 4rem;
 }
 
-header .header-container h1 span
-{
+header .header-container h1 span {
     display: block;
     text-align: right;
 }
 
-header .header-container h2
-{
+header .header-container h2 {
     position: absolute;
     left: 50%;
     top: calc(40% + 100px);
@@ -87,93 +123,57 @@ header .header-container h2
     letter-spacing: .5rem;
 }
 
-.navbar
-{
-    color: #ED145B !important;
-    background: transparent !important;
-}
 
-.navbar-brand
-{
-    font-family: "Gotham HTF Thin";
-    color: #ED145B !important;
-    font-size: 2rem;
-    letter-spacing: .25rem;
-}
+/* Conteúdo */
 
-#robocup
-{
-    padding-top: 4em;
-    padding-bottom: 2em;
-}
-
-.section-title
-{
+.section-title {
     color: #91A3AD;
     font-family: "Gotham HTF Light";
     margin-bottom: 2rem;
 }
 
-.section-title::after
-{
+.blink::after {
     content: '_';
     color: #ED145B;
     font-family: "Gotham HTF Light";
     animation: blink-animation 1s steps(2, start) infinite;
     -webkit-animation: blink-animation 1s steps(2, start) infinite;
-    margin-left: -5px;
 }
 
-#robocup video
-{
+section p {
+    color: #91A3AD;
+}
+
+section p span.text-pink {
+    font-family: "Gotham HTF Medium";
+}
+
+#robocup {
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+
+#robocup video {
     width: 100% !important;
     height: auto !important;
 }
 
-section p
-{
-    color: #91A3AD;
-}
-
-.text-pink
-{
-    color: #ED145B;
-}
-
-#picanha
-{
+#picanha {
     padding-top: 2em;
     padding-bottom: 2em;
 }
 
-.btn
-{
-    border: 1px solid #ed145b;
-    color: #ed145b;
-    display: inline-block;
-    font: 14px Gotham HTF Medium;
-    letter-spacing: .5px;
-    margin: 80px auto 0;
-    padding: 15px 43px;
-    text-transform: uppercase;
-    -webkit-transition: background .4s ease,color .4s ease;
-    transition: background .4s ease,color .4s ease;
-    border-radius: 0;
-}
 
-.btn:hover
-{
-    background: #ed145b;
-    color: #000;
-}
+/* Animações */
 
 @keyframes blink-animation {
     to {
-      visibility: hidden;
+        visibility: hidden;
     }
-  }
-  @-webkit-keyframes blink-animation {
+}
+
+@-webkit-keyframes blink-animation {
     to {
-      visibility: hidden;
+        visibility: hidden;
     }
-  }
+}

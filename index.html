@@ -1,88 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ROBOCUP</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="./css/custom.css">
-    <script src="./js/script.js"></script>
-    <script src="./js/lazyloadxt.min.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>ROBOCUP</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="./css/fonts.css">
+        <link rel="stylesheet" href="./css/custom.css">
+        <script src="./js/script.js"></script>
+        <script src="./js/lazyloadxt.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.4.1/jquery.appear.min.js" integrity="sha256-19/eyBKQKb8IPrt7321hbLkI1+xyM8d/DpzjyiEKnCE=" crossorigin="anonymous"></script>
+    </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">FIAP</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">FIAP</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                </ul>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <header>
-        <div class="video-container">
-            <video src="./outras_bibliotecas/header_background2.mp4" muted autoplay id="video_header">
+        </nav>
+        <header>
+            <div class="video-container">
+                <video src="./outras_bibliotecas/header_background2.mp4" muted autoplay id="video_header">
 
             </video>
-        </div>
-        <div class="header-backdrop">
-        </div>
-        <div class="header-container">
-            <h1>ROBO<br><span><small>CUP</small></span></h1>
-            <h2>
-                PICANHA
-            </h2>
-        </div>
-    </header>
-    <section id="robocup">
-        <div class="container">
-            <h2 class="section-title">
-                O ROBOCUP
-            </h2>
-            <p class="text-justify">
-                A <span class="text-pink">RoboCup</span> é a competição mais antiga da FIAP. Alunos dos primeiros anos de Sistemas de Informação constroem robôs que participam de duelos, cujo objetivo é <span class="text-pink">estourar o balão</span> que o robô adversário carrega.
-            </p>
-            <p class="text-justify">
-                Para decidir o vencedor, não só é preciso ter o<span class="text-pink"> melhor robô</span>, como a <span class="text-pink">melhor equipe</span> e o <span class="text-pink">melhor condutor</span>!
-            </p>
-            <video controls width="1280" height="768" data-poster="./images/video_next_poster.png">
+            </div>
+            <div class="header-backdrop">
+            </div>
+            <div class="header-container">
+                <h1>ROBO<br><span><small>CUP</small></span></h1>
+                <h2>
+                    PICANHA
+                </h2>
+            </div>
+        </header>
+        <section id="robocup">
+            <div class="container">
+                <h2 class="section-title" id="title_robocup" data-counter="0">
+                </h2>
+                <p class="text-justify">
+                    A <span class="text-pink">RoboCup</span> é a competição mais antiga da FIAP. Alunos dos primeiros anos de Sistemas de Informação constroem robôs que participam de duelos, cujo objetivo é <span class="text-pink">estourar o balão</span>                    que o robô adversário carrega.
+                </p>
+                <p class="text-justify">
+                    Para decidir o vencedor, não só é preciso ter o<span class="text-pink"> melhor robô</span>, como a <span class="text-pink">melhor equipe</span> e o <span class="text-pink">melhor condutor</span>!
+                </p>
+                <video controls width="1280" height="768" data-poster="./images/video_next_poster.png">
                 <source data-src="./outras_bibliotecas/video_next.mp4"></source>
             </video>
-            
-            <a href="https://www.fiap.com.br/robocup" class="btn mt-4 mx-auto" target="_blank">SAIBA MAIS</a>
-        </div>
-    </section>
-    <section id="picanha">
-        <div class="container">
-            <h2 class="section-title">
-                O PICANHA
-            </h2>
-            <p class="text-justify">
-                
-            </p>
-        </div>
-    </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"
-        integrity="sha256-fTuUgtT7O2rqoImwjrhDgbXTKUwyxxujIMRIK7TbuNU=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s=" crossorigin="anonymous"></script>
-</body>
+
+                <a href="https://www.fiap.com.br/robocup" class="btn mt-4 mx-auto" target="_blank">SAIBA MAIS</a>
+            </div>
+        </section>
+        <section id="picanha">
+            <div class="container">
+                <h2 class="section-title" id="title_picanha" data-counter="0">
+                </h2>
+                <p class="text-justify">
+
+                </p>
+            </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js" integrity="sha256-fTuUgtT7O2rqoImwjrhDgbXTKUwyxxujIMRIK7TbuNU=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s=" crossorigin="anonymous"></script>
+    </body>
+
 </html>
