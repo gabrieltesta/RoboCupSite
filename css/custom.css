@@ -66,6 +66,8 @@ header .video-container video {
     position: absolute;
     z-index: 0;
     bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 header .header-backdrop {
