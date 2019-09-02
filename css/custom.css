@@ -169,6 +169,27 @@ section p span.text-pink {
     padding-bottom: 2em;
 }
 
+#picanha img
+{
+    max-height: 250px;
+}
+
+#integrantes {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#integrantes .card
+{
+    background-color: #151718;
+}
+
+#integrantes .card img
+{
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+}
 
 /* Animações */
 
@@ -183,3 +204,10 @@ section p span.text-pink {
         visibility: hidden;
     }
 }
+
+/* Slick */
+.slick-next:before, .slick-prev:before, .slick-dots li button:before
+{
+    color: #ED145B !important;
+}
+

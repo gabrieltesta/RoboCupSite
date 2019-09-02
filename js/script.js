@@ -36,7 +36,7 @@ function isScrolledIntoView(elem) {
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
 
-var robocup_scroll, picanha_scroll = false;
+var robocup_scroll, picanha_scroll, integrantes_scroll = false;
 
 function animacoesTitulo() {
     if (isScrolledIntoView($('#title_robocup')) && !$('#title_robocup').hasClass('blink') && !robocup_scroll) {
@@ -47,6 +47,11 @@ function animacoesTitulo() {
     if (isScrolledIntoView($('#title_picanha')) && !$('#title_picanha').hasClass('blink') && !picanha_scroll) {
         picanha_scroll = true;
         escreverTitulo('O PICANHA', 'title_picanha');
+    }
+
+    if (isScrolledIntoView($('#title_integrantes')) && !$('#title_integrantes').hasClass('blink') && !integrantes_scroll) {
+        integrantes_scroll = true;
+        escreverTitulo('OS INTEGRANTES', 'title_integrantes');
     }
 }
 $(window).on('scroll', function() {
@@ -60,4 +65,21 @@ $(window).on('scroll', function() {
 
 $(document).ready(function() {
     animacoesTitulo();
+
+    $('.slick').slick({
+        centerMode: true,
+        slidesToShow: 3,
+        lazyLoad: 'ondemand',
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                dots: true,
+                arrows: true
+            }
+        }]
+    });
 });
