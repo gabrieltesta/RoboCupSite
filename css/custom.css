@@ -191,6 +191,19 @@ section p span.text-pink {
     border-radius: 100%;
 }
 
+/* Footer */
+footer
+{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: #151718;
+}
+
+footer .container .col-8
+{
+    border-right: solid 1px #ED145B;
+}
+
 /* Animações */
 
 @keyframes blink-animation {

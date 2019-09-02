@@ -54,14 +54,6 @@ function animacoesTitulo() {
         escreverTitulo('OS INTEGRANTES', 'title_integrantes');
     }
 }
-$(window).on('scroll', function() {
-    animacoesTitulo();
-    if ($(window).scrollTop() >= $(window).height() - ($(window).height() * 0.4) - 75) {
-        $('.navbar').addClass('navbar-bg-dark')
-    } else {
-        $('.navbar').removeClass('navbar-bg-dark');
-    }
-});
 
 $(document).ready(function() {
     animacoesTitulo();
