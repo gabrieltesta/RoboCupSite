@@ -1,41 +1,41 @@
 @font-face {
     font-family: Gotham HTF Bold;
-    src: url(../outras_bibliotecas/gotham-htf-bold.woff2) format("woff2"), url(../outras_bibliotecas/gotham-htf-bold.woff) format("woff");
+    src: url(./fonts/gotham-htf-bold.woff2) format("woff2"), url(./fonts/gotham-htf-bold.woff) format("woff");
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: Gotham HTF Book;
-    src: url(../outras_bibliotecas/gotham-htf-book.woff2) format("woff2"), url(../outras_bibliotecas/gotham-htf-book.woff) format("woff");
+    src: url(./fonts/gotham-htf-book.woff2) format("woff2"), url(./fonts/gotham-htf-book.woff) format("woff");
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: Gotham HTF Light;
-    src: url(../outras_bibliotecas/gotham-htf-light.woff2) format("woff2"), url(../outras_bibliotecas/gotham-htf-light.woff) format("woff");
+    src: url(./fonts/gotham-htf-light.woff2) format("woff2"), url(./fonts/gotham-htf-light.woff) format("woff");
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: Gotham HTF Medium;
-    src: url(../outras_bibliotecas/gotham-htf-medium.woff2) format("woff2"), url(../outras_bibliotecas/gotham-htf-medium.woff) format("woff");
+    src: url(./fonts/gotham-htf-medium.woff2) format("woff2"), url(./fonts/gotham-htf-medium.woff) format("woff");
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: Gotham HTF Thin;
-    src: url(../outras_bibliotecas/gotham-htf-thin.woff2) format("woff2"), url(../outras_bibliotecas/gotham-htf-thin.woff) format("woff");
+    src: url(./fonts/gotham-htf-thin.woff2) format("woff2"), url(./fonts/gotham-htf-thin.woff) format("woff");
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: Gotham HTF Light;
-    src: url(../outras_bibliotecas/gotham-htf-light.woff2) format("woff2"),url(../outras_bibliotecas/gotham-htf-light.woff) format("woff");
+    src: url(./fonts/gotham-htf-light.woff2) format("woff2"),url(./fonts/gotham-htf-light.woff) format("woff");
     font-weight: 400;
     font-style: normal
 }

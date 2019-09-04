@@ -7,7 +7,10 @@ window.addEventListener('load', function() {
 
     newVideo.play();
 });
-
+/**
+ * @param  {String} titulo
+ * @param  {Number} id
+ */
 function escreverTitulo(titulo, id) {
     var _id = '#' + id;
     var counter = parseInt($(_id).attr('data-counter'));
@@ -25,7 +28,10 @@ function escreverTitulo(titulo, id) {
     }
 
 }
-
+/**
+ * Verifica se o elemento está visível
+ * @param  {HTMLElement} elem
+ */
 function isScrolledIntoView(elem) {
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height();
@@ -37,7 +43,6 @@ function isScrolledIntoView(elem) {
 }
 
 var robocup_scroll, picanha_scroll, integrantes_scroll = false;
-
 function animacoesTitulo() {
     if (isScrolledIntoView($('#title_robocup')) && !$('#title_robocup').hasClass('blink') && !robocup_scroll) {
         robocup_scroll = true;
@@ -55,14 +60,14 @@ function animacoesTitulo() {
     }
 }
 
-$(window).on('scroll', function(){
-    animacoesTitulo();
-});
-
-$(document).ready(function() {
-    animacoesTitulo();
-
-    $('.slick').slick({
+/**
+ * Cria um carrossel com slick
+ * 
+ * @param  {String} elem
+ */
+function createSlickCarrousel(elem)
+{
+    $(elem).slick({
         centerMode: true,
         slidesToShow: 3,
         lazyLoad: 'ondemand',
@@ -78,4 +83,24 @@ $(document).ready(function() {
             }
         }]
     });
+}
+
+$('.nav-item').on('click', function(){
+    var href = $(this).data('href');
+
+    $('.nav-item').removeClass('active');
+    $(this).addClass('active');
+
+    $('.navbar-collapse').collapse('hide');
+
+    $("html, body").animate({ scrollTop: $(href).offset().top }, 1250);
+});
+
+$(window).on('scroll', function(){
+    animacoesTitulo();
+});
+
+$(document).ready(function() {
+    animacoesTitulo();
+    createSlickCarrousel('.slick');
 });

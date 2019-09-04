@@ -10,9 +10,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
         <link rel="stylesheet" href="./css/fonts.css">
         <link rel="stylesheet" href="./css/custom.css">
+        <link rel="shortcut icon" href="./favicon.ico">
     </head>
 
     <body>
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="#">FIAP</a>
@@ -22,19 +24,30 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <li class="nav-item active" data-href="header">
+                            <a class="nav-link">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                        <li class="nav-item" data-href="#robocup">
+                            <a class="nav-link">O Robocup</a>
+                        </li>
+                        <li class="nav-item" data-href="#picanha">
+                            <a class="nav-link">O Picanha</a>
+                        </li>
+                        <li class="nav-item" data-href="#integrantes">
+                            <a class="nav-link">Os Integrantes</a>
+                        </li>
+                        <li class="nav-item" data-href="footer">
+                            <a class="nav-link">Contato</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <!--  -->
+        <!-- Header -->
         <header>
             <div class="video-container">
-                <video src="./outras_bibliotecas/header_background6.mp4" muted autoplay id="video_header">
+                <video src="./outras_bibliotecas/videos/header_background.mp4" muted autoplay id="video_header">
 
             </video>
             </div>
@@ -47,6 +60,8 @@
                 </h2>
             </div>
         </header>
+        <!--  -->
+        <!-- Robocup -->
         <section id="robocup">
             <div class="container">
                 <h2 class="section-title" id="title_robocup" data-counter="0">
@@ -58,12 +73,14 @@
                     Para decidir o vencedor, não só é preciso ter o<span class="text-pink"> melhor robô</span>, como a <span class="text-pink">melhor equipe</span> e o <span class="text-pink">melhor condutor</span>!
                 </p>
                 <video controls width="1280" height="768" data-poster="./images/video_next_poster.png">
-                <source data-src="./outras_bibliotecas/video_next.mp4"></source>
+                <source data-src="./outras_bibliotecas/videos/video_next.mp4"></source>
             </video>
 
                 <a href="https://www.fiap.com.br/robocup" class="btn mt-4 mx-auto" target="_blank">SAIBA MAIS</a>
             </div>
         </section>
+        <!--  -->
+        <!-- Picanha -->
         <section id="picanha">
             <div class="container">
                 <h2 class="section-title" id="title_picanha" data-counter="0">
@@ -84,6 +101,8 @@
                 </div>
             </div>
         </section>
+        <!--  -->
+        <!-- Integrantes -->
         <section id="integrantes">
             <div class="container">
                 <h2 class="section-title" id="title_integrantes" data-counter="0">
@@ -140,6 +159,8 @@
                 </div>
             </div>
         </section>
+        <!--  -->
+        <!-- Footer -->
         <footer>
             <div class="container">
                 <div class="col-8">
@@ -151,14 +172,17 @@
                 </div>
             </div>
         </footer>
+        <!--  -->
+        <!-- Scripts -->
         <script src="./js/script.js"></script>
         <script src="./js/lazyloadxt.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.4.1/jquery.appear.min.js" integrity="sha256-19/eyBKQKb8IPrt7321hbLkI1+xyM8d/DpzjyiEKnCE=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY=" crossorigin="anonymous" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js" integrity="sha256-fTuUgtT7O2rqoImwjrhDgbXTKUwyxxujIMRIK7TbuNU=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s=" crossorigin="anonymous"></script>
+        <script src="./js/jquery.appear.min.js"></script>
+        <script src="./js/slick/slick.min.js"></script>
+        <link rel="stylesheet" href="./js/slick/slick.min.css"/>
+        <link rel="stylesheet" href="./js/slick/slick-theme.min.css"/>
+        <script src="./js/popper.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <!--  -->
     </body>
 
 </html>
