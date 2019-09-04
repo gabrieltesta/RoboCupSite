@@ -55,6 +55,10 @@ function animacoesTitulo() {
     }
 }
 
+$(window).on('scroll', function(){
+    animacoesTitulo();
+});
+
 $(document).ready(function() {
     animacoesTitulo();
 
