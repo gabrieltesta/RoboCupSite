@@ -93,7 +93,7 @@ $('.nav-item').on('click', function(){
 
     $('.navbar-collapse').collapse('hide');
 
-    $("html, body").animate({ scrollTop: $(href).offset().top }, 1250);
+    $("html, body").animate({ scrollTop: $(href).offset().top-75 }, 1250);
 });
 
 $(window).on('scroll', function(){
