@@ -146,10 +146,10 @@ header .header-container h2 {
     letter-spacing: .5rem;
 }
 
-@media(max-width: 767.9px)
+@media(max-width: 767px)
 {
     header .header-container h2 {
-        top: calc(40% + 175px);
+        top: calc(40% + 175px) !important;
     }
 }
 
