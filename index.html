@@ -163,12 +163,30 @@
         <!-- Footer -->
         <footer>
             <div class="container">
-                <div class="col-8">
-                    <h4 class="text-pink">CONTATO</h4>
-                    
-                </div>
-                <div class="col-4">
-
+                <div class="row">
+                    <div class="col-12 col-md-8 px-md-0">
+                        <h4 class="text-pink">CONTATO</h4>
+                        <form action="#" method="post" class="row col-12 col-md-8 mt-4 mx-0 container" autocomplete="off" spellcheck="false">
+                            <div class="form-group w-100">
+                                <label for="form_name">Nome</label>
+                                <input type="text" name="name" id="form_name" class="form-control">
+                            </div>
+                            <div class="form-group w-100">
+                                <label for="form_name">E-mail</label>
+                                <input type="email" name="email" id="form_email" class="form-control">
+                            </div>
+                            <div class="form-group w-100">
+                                <label for="form_message">Mensagem</label>
+                                <textarea name="message" id="form_message" class="form-control" row="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn mt-4 ml-0 mr-auto">ENVIAR</button>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-4 pr-md-0 mt-4 mt-md-0">
+                        <div class="container row col-12 w-100 mx-0 px-0">
+                            <h4 class="text-pink">PICANHA</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
@@ -182,6 +200,7 @@
         <link rel="stylesheet" href="./js/slick/slick-theme.min.css"/>
         <script src="./js/popper.min.js"></script>
         <script src="./js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./css/normalize.min.css">
         <!--  -->
     </body>
 

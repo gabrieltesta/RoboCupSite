@@ -1,11 +1,15 @@
 /* Universal */
 
-body {
+html, body {
     background-color: #212121;
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 }
 
+textarea
+{
+    resize: vertical;
+}
 
 /* Helpers */
 
@@ -30,6 +34,11 @@ body {
 .btn:hover {
     background: #ed145b;
     color: #000;
+}
+
+.bb-0
+{
+    border-bottom: 0 !important;
 }
 
 
@@ -128,13 +137,20 @@ header .header-container h1 span {
 header .header-container h2 {
     position: absolute;
     left: 50%;
-    top: calc(40% + 100px);
+    top: calc(40% + 125px);
     transform: translate(-50%, -50%);
     z-index: 2;
     color: #ED145B;
     font-family: "Gotham HTF Book";
     font-size: 2rem;
     letter-spacing: .5rem;
+}
+
+@media(max-width: 767.9px)
+{
+    header .header-container h2 {
+        top: calc(40% + 150px);
+    }
 }
 
 
@@ -207,9 +223,32 @@ footer
     background-color: #151718;
 }
 
-footer .container .col-8
+@media(max-width: 767.9px)
 {
-    border-right: solid 1px #ED145B;
+    footer h4
+    {
+        width: 100%;
+        border-bottom: solid 1px #ED145B !important;
+    }
+}
+
+@media(min-width: 768px)
+{
+    footer .container div.col-md-8
+    {
+        border-right: solid 1px #ED145B;
+    }
+}
+
+footer label
+{
+    color: #ED145B;
+    font-size: 14px;
+}
+
+footer textarea
+{
+    min-height: 100px;
 }
 
 /* Animações */
