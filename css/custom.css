@@ -198,6 +198,11 @@ section p span.text-pink {
     max-height: 250px;
 }
 
+#picanha video{
+    width: 100% !important;
+    height: auto !important;
+}
+
 #integrantes {
     padding-top: 2em;
     padding-bottom: 2em;
@@ -221,6 +226,31 @@ footer
     padding-top: 2em;
     padding-bottom: 2em;
     background-color: #151718;
+}
+
+footer .icon
+{
+    display: block;
+    float: left;
+}
+
+footer .icon:not(:first-of-type)
+{
+    margin-left: .5rem;
+}
+
+footer .icon img
+{
+    width: 16px;
+    height: auto;
+}
+
+footer ul
+{
+    display: block;
+    list-style: none;
+    padding-left: 0;
+    color: #91A3AD;
 }
 
 @media(max-width: 767.9px)
