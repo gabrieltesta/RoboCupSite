@@ -69,6 +69,11 @@ textarea
     background-image: url("./../images/hamburger.svg") !important;
 }
 
+.navbar a
+{
+    cursor: pointer;
+}
+
 /* Header */
 
 header {

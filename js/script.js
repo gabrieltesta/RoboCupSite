@@ -104,3 +104,8 @@ $(document).ready(function() {
     animacoesTitulo();
     createSlickCarrousel('.slick');
 });
+
+$('form').on('submit', function(evt){
+    evt.preventDefault();
+    evt.stopPropagation();
+});
