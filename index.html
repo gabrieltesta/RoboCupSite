@@ -1,227 +1,293 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>ROBOCUP</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
-        <link rel="stylesheet" href="./css/fonts.css">
-        <link rel="stylesheet" href="./css/custom.css">
-        <link rel="shortcut icon" href="./favicon.ico">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ROBOCUP</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="shortcut icon" href="./favicon.ico">
+</head>
 
-    <body>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">FIAP</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">FIAP</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active" data-href="header">
-                            <a class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item" data-href="#robocup">
-                            <a class="nav-link">O Robocup</a>
-                        </li>
-                        <li class="nav-item" data-href="#picanha">
-                            <a class="nav-link">O Picanha</a>
-                        </li>
-                        <li class="nav-item" data-href="#integrantes">
-                            <a class="nav-link">Os Integrantes</a>
-                        </li>
-                        <li class="nav-item" data-href="footer">
-                            <a class="nav-link">Contato</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active" data-href="header">
+                        <a class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item" data-href="#robocup">
+                        <a class="nav-link">O Robocup</a>
+                    </li>
+                    <li class="nav-item" data-href="#picanha">
+                        <a class="nav-link">O Picanha</a>
+                    </li>
+                    <li class="nav-item" data-href="#armamentos">
+                        <a class="nav-link">Os Armamentos</a>
+                    </li>
+                    <li class="nav-item" data-href="#integrantes">
+                        <a class="nav-link">Os Integrantes</a>
+                    </li>
+                    <li class="nav-item" data-href="footer">
+                        <a class="nav-link">Contato</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        <!--  -->
-        <!-- Header -->
-        <header>
-            <div class="video-container">
-                <video src="./outras_bibliotecas/videos/header_background.mp4" muted autoplay id="video_header">
+        </div>
+    </nav>
+    <!--  -->
+    <!-- Header -->
+    <header>
+        <div class="video-container">
+            <video src="./outras_bibliotecas/videos/header_background.mp4" muted autoplay id="video_header">
 
             </video>
-            </div>
-            <div class="header-backdrop">
-            </div>
-            <div class="header-container">
-                <h1>ROBO<br><span><small>CUP</small></span></h1>
-                <h2>
-                    PICANHA
-                </h2>
-            </div>
-        </header>
-        <!--  -->
-        <!-- Robocup -->
-        <section id="robocup">
-            <div class="container">
-                <h2 class="section-title" id="title_robocup" data-counter="0">
-                </h2>
-                <p class="text-justify">
-                    A <span class="text-pink">RoboCup</span> é a competição mais antiga da FIAP. Alunos dos primeiros anos de Sistemas de Informação constroem robôs que participam de duelos, cujo objetivo é <span class="text-pink">estourar o balão</span>                    que o robô adversário carrega.
-                </p>
-                <p class="text-justify">
-                    Para decidir o vencedor, não só é preciso ter o<span class="text-pink"> melhor robô</span>, como a <span class="text-pink">melhor equipe</span> e o <span class="text-pink">melhor condutor</span>!
-                </p>
-                <video controls width="1280" height="768" data-poster="./images/video_next_poster.png">
-                <source data-src="./outras_bibliotecas/videos/video_next.mp4"></source>
+        </div>
+        <div class="header-backdrop">
+        </div>
+        <div class="header-container">
+            <h1>ROBO<br><span><small>CUP</small></span></h1>
+            <h2>
+                PICANHA
+            </h2>
+        </div>
+    </header>
+    <!--  -->
+    <!-- Robocup -->
+    <section id="robocup">
+        <div class="container">
+            <h2 class="section-title" id="title_robocup" data-counter="0">
+            </h2>
+            <p class="text-justify">
+                A <span class="text-pink">RoboCup</span> é a competição mais antiga da FIAP. Alunos dos primeiros anos
+                de Sistemas de Informação constroem robôs que participam de duelos, cujo objetivo é <span
+                    class="text-pink">estourar o balão</span> que o robô adversário carrega.
+            </p>
+            <p class="text-justify">
+                Para decidir o vencedor, não só é preciso ter o<span class="text-pink"> melhor robô</span>, como a <span
+                    class="text-pink">melhor equipe</span> e o <span class="text-pink">melhor condutor</span>!
+            </p>
+            <video controls width="1280" height="768" data-poster="./images/video_next_poster.png">
+                <source data-src="./outras_bibliotecas/videos/video_next.mp4">
+                </source>
             </video>
-
-                <a href="https://www.fiap.com.br/robocup" class="btn mt-4 mx-auto" target="_blank">SAIBA MAIS</a>
-            </div>
-        </section>
-        <!--  -->
-        <!-- Picanha -->
-        <section id="picanha">
-            <div class="container">
-                <h2 class="section-title" id="title_picanha" data-counter="0">
-                </h2>
-                <p class="text-justify">
-                    O <span class="text-pink">Picanha</span> é o robô mais mortífero (estourador de balões) da FIAP.
-                </p>
-                <div class="row">
-                    <div class="col-12 col-md-4 mb-4 mb-md-0">
-                        <video class="d-block mx-auto video-robo" controls data-poster="./images/robo.jpg">
-                            <source data-src="./outras_bibliotecas/videos/robo.mp4"></source>
-                        </video>                    </div>
-                    <div class="col-12 col-md-8">
-                        <p class="text-justify">Ele é <span class="text-pink">rápido</span>, <span class="text-pink">ágil</span> e <span class="text-pink">resistente</span>, controlado à distância por um aplicativo de celular, que permite o condutor ver pelos próprios olhos do robô!</p>
-                        <p class="text-justify">
-                            Seu <span class="text-pink">armamento</span> é ativado por vários sensores ao redor de sua base, e <span class="text-pink">garante estourar os balões adversários.</span>
-                        </p>
-                    </div>
+            <p class="text-justify pt-4">
+                Os <span class="text-pink">melhores</span> robôs do Robocup terão a chance de participar do <span
+                    class="text-pink">NEXT</span>, o <span class="text-pink">Festival de Tecnologia e Inovação</span> da
+                FIAP.
+            </p>
+            <a href="https://www.fiap.com.br/next/" class="btn mt-4 mx-auto" target="_blank">SAIBA MAIS</a>
+        </div>
+    </section>
+    <!--  -->
+    <!-- Picanha -->
+    <section id="picanha">
+        <div class="container">
+            <h2 class="section-title" id="title_picanha" data-counter="0">
+            </h2>
+            <p class="text-justify">
+                O <span class="text-pink">Picanha</span> é o robô mais mortífero (estourador de balões) da FIAP.
+            </p>
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                    <img src="./images/robo2.jpg" alt="Picanha" class="img-fluid" draggable="false">
                 </div>
-            </div>
-        </section>
-        <!--  -->
-        <!-- Integrantes -->
-        <section id="integrantes">
-            <div class="container">
-                <h2 class="section-title" id="title_integrantes" data-counter="0">
-                </h2>
-                <p class="text-justify">
-                    A equipe é formada por <span class="text-pink">5 integrantes</span>:
-                </p>
-                <div class="row slick">
-                    <div class="col-12">
-                        <div class="card p-2 mt-4 mb-4 pt-4 pb-4">
-                            <div class="card-body text-center">
-                                <img src="https://assets.vogue.com/photos/5a0b9d136ed2ed3c2e007e85/master/pass/pine-post-tout.jpg" alt="João da Silva" class="mb-4 d-block mx-auto">
-                                <h5 class="text-pink pt-4">Bruno Faldão</h5>
-                                <h5 class="text-pink mt-2">&nbsp;</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="card p-2 mt-4 mb-4 pt-4 pb-4">
-                            <div class="card-body text-center">
-                                <img src="https://assets.vogue.com/photos/5a0b9d136ed2ed3c2e007e85/master/pass/pine-post-tout.jpg" alt="João da Silva" class="mb-4 d-block mx-auto">
-                                <h5 class="text-pink pt-4">Gabriel Testa</h5>
-                                <h5 class="text-pink mt-2">&nbsp;</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="card p-2 mt-4 mb-4 pt-4 pb-4">
-                            <div class="card-body text-center">
-                                <img src="https://assets.vogue.com/photos/5a0b9d136ed2ed3c2e007e85/master/pass/pine-post-tout.jpg" alt="João da Silva" class="mb-4 d-block mx-auto">
-                                <h5 class="text-pink pt-4">Kaoane Vieira</h5>
-                                <h5 class="text-pink mt-2">&nbsp;</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="card p-2 mt-4 mb-4 pt-4 pb-4">
-                            <div class="card-body text-center">
-                                <img src="https://assets.vogue.com/photos/5a0b9d136ed2ed3c2e007e85/master/pass/pine-post-tout.jpg" alt="João da Silva" class="mb-4 d-block mx-auto">
-                                <h5 class="text-pink pt-4">Matheus Felix</h5>
-                                <h5 class="text-pink mt-2">&nbsp;</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="card p-2 mt-4 mb-4 pt-4 pb-4">
-                            <div class="card-body text-center">
-                                <img src="https://assets.vogue.com/photos/5a0b9d136ed2ed3c2e007e85/master/pass/pine-post-tout.jpg" alt="João da Silva" class="mb-4 d-block mx-auto">
-                                <h5 class="text-pink pt-4">Rafael Thayto</h5>
-                                <h5 class="text-pink mt-2">&nbsp;</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--  -->
-        <!-- Footer -->
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-8 px-md-0">
-                        <h4 class="text-pink">CONTATO</h4>
-                        <form action="#" method="post" class="row col-12 col-md-8 mt-4 mx-0 container" autocomplete="off" spellcheck="false">
-                            <div class="form-group w-100">
-                                <label for="form_name">Nome</label>
-                                <input type="text" name="name" id="form_name" class="form-control">
-                            </div>
-                            <div class="form-group w-100">
-                                <label for="form_name">E-mail</label>
-                                <input type="email" name="email" id="form_email" class="form-control">
-                            </div>
-                            <div class="form-group w-100">
-                                <label for="form_message">Mensagem</label>
-                                <textarea name="message" id="form_message" class="form-control" row="4"></textarea>
-                            </div>
-                            <button type="submit" class="btn mt-4 ml-0 mr-auto">ENVIAR</button>
-                        </form>
-                    </div>
-                    <div class="col-12 col-md-4 pr-md-0 mt-4 mt-md-0">
-                        <div class="container row col-12 w-100 mx-0 px-0">
-                            <h4 class="text-pink">PICANHA</h4>
-                            <ul class="w-100 mt-4">
-                                <li>Avenida Primeiro de Maio, 973</li>
-                                <li>Buritizal - Macapá/AP</li>
-                                <li>(11) 1234-5678</li>
-                                <li>contato@exemplo.com</li>
+                <div class="col-12 col-md-8">
+                    <p class="text-justify">Ele é <span class="text-pink">rápido</span>, <span
+                            class="text-pink">ágil</span> e <span class="text-pink">resistente</span>, controlado à
+                        distância por um aplicativo de celular, que permite o condutor ver pelos próprios olhos do robô!
+                    </p>
+                    <p>Materiais:</p>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="text-justify">
+                                <li>Arduino UNO R3</li>
+                                <li>Shield de Motor</li>
+                                <li>Shield de Bluetooth HC-06</li>
+                                <li>Soquete de 6 pilhas AA</li>
+                                <li>Cabo de alimentação de bateria 9V</li>
+                                <li>Resistor de filme de carbono de 390 Ohms</li>
+                                <li>LED de 3mm</li>
                             </ul>
-                            <div>
-                                <a href="#" class="icon">
-                                    <img src="./images/icon_facebook.svg" alt="Facebook">
-                                </a>
-                                <a href="#" class="icon">
-                                    <img src="./images/icon_twitter.svg" alt="Twitter">
-                                </a>
-                                <a href="#" class="icon">
-                                    <img src="./images/icon_instagram.svg" alt="Instagram">
-                                </a>
-                                <a href="#" class="icon">
-                                    <img src="./images/icon_youtube.svg" alt="YouTube">
-                                </a>
-                            </div>
+                        </div>
+                        <div class="col-6">
+                            <ul class="text-justify">
+                                <li>Motores de 5V/330RPM para movimentação</li>
+                                <li>Motores de 5V/150RPM para as armas</li>
+                                <li>Rodas de espuma</li>
+                                <li>Chave de fim de curso</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!--  -->
-        <!-- Scripts -->
-        <script src="./js/script.js"></script>
-        <script src="./js/lazyloadxt.min.js"></script>
-        <script src="./js/jquery.appear.min.js"></script>
-        <script src="./js/slick/slick.min.js"></script>
-        <link rel="stylesheet" href="./js/slick/slick.min.css"/>
-        <link rel="stylesheet" href="./js/slick/slick-theme.min.css"/>
-        <script src="./js/popper.min.js"></script>
-        <script src="./js/bootstrap.min.js"></script>
-        <!--  -->
-    </body>
+        </div>
+    </section>
+    <!--  -->
+    <!-- Armamentos -->
+    <section id="armamentos">
+        <div class="container">
+            <h2 class="section-title" id="title_armamentos" data-counter="0">
+            </h2>
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                    <video class="d-block mx-auto video-robo" controls>
+                        <source data-src="./outras_bibliotecas/videos/robo.mp4">
+                        </source>
+                    </video>
+                </div>
+                <div class="col-12 col-md-8">
+                    <p class="text-justify">
+                        Seu <span class="text-pink">armamento</span> é ativado por vários sensores ao redor de sua base,
+                        e <span class="text-pink">garante estourar os balões adversários.</span>
+                    </p>
+                    <p>
+                        Permanece <span class="text-pink">15 segundos acionado</span>, e após isso retrái suas armas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+    <!-- Integrantes -->
+    <section id="integrantes">
+        <div class="container">
+            <h2 class="section-title" id="title_integrantes" data-counter="0">
+            </h2>
+            <p class="text-justify">
+                A equipe é formada por <span class="text-pink">5 integrantes</span>:
+            </p>
+            <div class="row slick">
+                <div class="col-12">
+                    <div class="card p-2 mt-4 mb-4 pt-4 pb-4">
+                        <div class="card-body text-center">
+                            <img src="https://assets.vogue.com/photos/5a0b9d136ed2ed3c2e007e85/master/pass/pine-post-tout.jpg"
+                                alt="João da Silva" class="mb-4 d-block mx-auto">
+                            <h5 class="text-pink pt-4">Bruno Faldão</h5>
+                            <h5 class="text-pink mt-2">&nbsp;</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card p-2 mt-4 mb-4 pt-4 pb-4">
+                        <div class="card-body text-center">
+                            <img src="https://assets.vogue.com/photos/5a0b9d136ed2ed3c2e007e85/master/pass/pine-post-tout.jpg"
+                                alt="João da Silva" class="mb-4 d-block mx-auto">
+                            <h5 class="text-pink pt-4">Gabriel Testa</h5>
+                            <h5 class="text-pink mt-2">&nbsp;</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card p-2 mt-4 mb-4 pt-4 pb-4">
+                        <div class="card-body text-center">
+                            <img src="https://assets.vogue.com/photos/5a0b9d136ed2ed3c2e007e85/master/pass/pine-post-tout.jpg"
+                                alt="João da Silva" class="mb-4 d-block mx-auto">
+                            <h5 class="text-pink pt-4">Kaoane Vieira</h5>
+                            <h5 class="text-pink mt-2">&nbsp;</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card p-2 mt-4 mb-4 pt-4 pb-4">
+                        <div class="card-body text-center">
+                            <img src="https://assets.vogue.com/photos/5a0b9d136ed2ed3c2e007e85/master/pass/pine-post-tout.jpg"
+                                alt="João da Silva" class="mb-4 d-block mx-auto">
+                            <h5 class="text-pink pt-4">Matheus Felix</h5>
+                            <h5 class="text-pink mt-2">&nbsp;</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card p-2 mt-4 mb-4 pt-4 pb-4">
+                        <div class="card-body text-center">
+                            <img src="https://assets.vogue.com/photos/5a0b9d136ed2ed3c2e007e85/master/pass/pine-post-tout.jpg"
+                                alt="João da Silva" class="mb-4 d-block mx-auto">
+                            <h5 class="text-pink pt-4">Rafael Thayto</h5>
+                            <h5 class="text-pink mt-2">&nbsp;</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8 px-md-0">
+                    <h4 class="text-pink">CONTATO</h4>
+                    <form action="#" method="post" class="row col-12 col-md-8 mt-4 mx-0 container" autocomplete="off"
+                        spellcheck="false">
+                        <div class="form-group w-100">
+                            <label for="form_name">Nome</label>
+                            <input type="text" name="name" id="form_name" class="form-control">
+                        </div>
+                        <div class="form-group w-100">
+                            <label for="form_name">E-mail</label>
+                            <input type="email" name="email" id="form_email" class="form-control">
+                        </div>
+                        <div class="form-group w-100">
+                            <label for="form_message">Mensagem</label>
+                            <textarea name="message" id="form_message" class="form-control" row="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn mt-4 ml-0 mr-auto">ENVIAR</button>
+                    </form>
+                </div>
+                <div class="col-12 col-md-4 pr-md-0 mt-4 mt-md-0">
+                    <div class="container row col-12 w-100 mx-0 px-0">
+                        <h4 class="text-pink">PICANHA</h4>
+                        <ul class="w-100 mt-4">
+                            <li>Avenida Primeiro de Maio, 973</li>
+                            <li>Buritizal - Macapá/AP</li>
+                            <li>(11) 1234-5678</li>
+                            <li>contato@exemplo.com</li>
+                        </ul>
+                        <div>
+                            <a href="#" class="icon">
+                                <img src="./images/icon_facebook.svg" alt="Facebook">
+                            </a>
+                            <a href="#" class="icon">
+                                <img src="./images/icon_twitter.svg" alt="Twitter">
+                            </a>
+                            <a href="#" class="icon">
+                                <img src="./images/icon_instagram.svg" alt="Instagram">
+                            </a>
+                            <a href="#" class="icon">
+                                <img src="./images/icon_youtube.svg" alt="YouTube">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--  -->
+    <!-- Scripts -->
+    <script src="./js/script.js"></script>
+    <script src="./js/lazyloadxt.min.js"></script>
+    <script src="./js/jquery.appear.min.js"></script>
+    <script src="./js/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="./js/slick/slick.min.css" />
+    <link rel="stylesheet" href="./js/slick/slick-theme.min.css" />
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!--  -->
+</body>
 
 </html>

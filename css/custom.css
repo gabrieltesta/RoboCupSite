@@ -11,6 +11,11 @@ textarea
     resize: vertical;
 }
 
+input, select, textarea
+{
+    border-radius: 0 !important;
+}
+
 /* Helpers */
 
 .text-pink {
@@ -179,6 +184,13 @@ section p {
     color: #91A3AD;
 }
 
+section ul
+{
+    color: #91A3AD;
+    padding-left: 1.25rem;
+    font-size: 14px;
+}
+
 section p span.text-pink {
     font-family: "Gotham HTF Medium";
 }
@@ -203,7 +215,13 @@ section p span.text-pink {
     max-height: 250px;
 }
 
-#picanha video{
+#armamentos {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+
+#armamentos video{
     width: 100% !important;
     height: auto !important;
 }

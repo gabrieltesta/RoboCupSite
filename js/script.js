@@ -42,7 +42,7 @@ function isScrolledIntoView(elem) {
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
 
-var robocup_scroll, picanha_scroll, integrantes_scroll = false;
+var robocup_scroll, picanha_scroll, integrantes_scroll, armamentos_scroll = false;
 function animacoesTitulo() {
     if (isScrolledIntoView($('#title_robocup')) && !$('#title_robocup').hasClass('blink') && !robocup_scroll) {
         robocup_scroll = true;
@@ -52,6 +52,11 @@ function animacoesTitulo() {
     if (isScrolledIntoView($('#title_picanha')) && !$('#title_picanha').hasClass('blink') && !picanha_scroll) {
         picanha_scroll = true;
         escreverTitulo('O PICANHA', 'title_picanha');
+    }
+
+    if (isScrolledIntoView($('#title_armamentos')) && !$('#title_armamentos').hasClass('blink') && !armamentos_scroll) {
+        integrantes_scroll = true;
+        escreverTitulo('OS ARMAMENTOS', 'title_armamentos');
     }
 
     if (isScrolledIntoView($('#title_integrantes')) && !$('#title_integrantes').hasClass('blink') && !integrantes_scroll) {
